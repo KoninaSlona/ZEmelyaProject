@@ -35,14 +35,14 @@ from typing import List
 
 
 def fizzbuzz(n: int) -> List[str]:
-    fizzbuzz_list = []
-    for i in range(1, n + 1):
-        if i % 3 == 0 and i % 5 == 0:
-            fizzbuzz_list.append("fizzbuzz")
-        elif i % 3 == 0:
-            fizzbuzz_list.append("fizz")
-        elif i % 5 == 0:
-            fizzbuzz_list.append("buzz")
+    fizzbuzz_list = []  # Create an empty list to store the FizzBuzz numbers
+    for i in range(1, n + 1):  # Iterate from 1 to n (inclusive)
+        if i % 3 == 0 and i % 5 == 0:  # If the number is divisible by both 3 and 5
+            fizzbuzz_list.append("fizzbuzz")  # Append "fizzbuzz" to the list
+        elif i % 3 == 0:  # If the number is divisible by 3
+            fizzbuzz_list.append("fizz")  # Append "fizz" to the list
+        elif i % 5 == 0:  # If the number is divisible by 5
+            fizzbuzz_list.append("buzz")  # Append "buzz" to the list
         else:
-            fizzbuzz_list.append(str(i))
-    return fizzbuzz_list
+            fizzbuzz_list.append(str(i))  # Append the number as a string to the list
+    return fizzbuzz_list  # Return the list of FizzBuzz numbers
